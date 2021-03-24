@@ -1,6 +1,6 @@
 from PyQt5 import QtGui
 from PyQt5.QtWidgets import QApplication, QDialog, QVBoxLayout, QLabel
-import sys
+
 from PyQt5.QtGui import QPixmap
 
 
@@ -27,8 +27,8 @@ class Imagen(QDialog):
         self.resize(pixmap.width(),pixmap.height())
         
         self.show()
-    
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ex = Imagen()
-    sys.exit(app.exec_())
+#import sys    
+#if __name__ == '__main__':
+ #   app = QApplication(sys.argv)
+ #   ex = Imagen()
+  #  sys.exit(app.exec_())

@@ -14,21 +14,21 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(988, 751)
-        MainWindow.setStyleSheet("background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(234, 249, 249), stop:1 rgba(1, 181, 180));\n"
-"")
+        MainWindow.resize(1186, 705)
+        MainWindow.setStyleSheet("color:white;\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.stackedWidget = QtWidgets.QStackedWidget(self.centralwidget)
         self.stackedWidget.setEnabled(True)
-        self.stackedWidget.setGeometry(QtCore.QRect(10, 60, 951, 611))
-        self.stackedWidget.setStyleSheet("background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(234, 249, 249), stop:1 rgba(1, 181, 180));\n"
+        self.stackedWidget.setGeometry(QtCore.QRect(10, 20, 1101, 621))
+        self.stackedWidget.setStyleSheet("background: transparent;\n"
 "")
         self.stackedWidget.setObjectName("stackedWidget")
         self.page1 = QtWidgets.QWidget()
         self.page1.setObjectName("page1")
         self.TExt_Link = QtWidgets.QLabel(self.page1)
-        self.TExt_Link.setGeometry(QtCore.QRect(320, 100, 441, 81))
+        self.TExt_Link.setGeometry(QtCore.QRect(300, 80, 421, 81))
         font = QtGui.QFont()
         font.setFamily("Impact")
         font.setPointSize(26)
@@ -38,59 +38,68 @@ class Ui_MainWindow(object):
 "")
         self.TExt_Link.setObjectName("TExt_Link")
         self.icone = QtWidgets.QLabel(self.page1)
-        self.icone.setGeometry(QtCore.QRect(10, 70, 241, 211))
-        self.icone.setStyleSheet("border-style:outset;\n"
-"border-radius:12px;\n"
-"border-width:1px;\n"
-"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(234, 249, 249), stop:1 rgba(1, 181, 180));\n"
-"\n"
-"\n"
-"")
+        self.icone.setGeometry(QtCore.QRect(20, 50, 271, 221))
+        self.icone.setStyleSheet("")
         self.icone.setText("")
-        self.icone.setPixmap(QtGui.QPixmap("../icone py/sitemayou/you.png"))
+        self.icone.setPixmap(QtGui.QPixmap("icon/you.png"))
         self.icone.setObjectName("icone")
         self.caixa_link_2 = QtWidgets.QLineEdit(self.page1)
-        self.caixa_link_2.setGeometry(QtCore.QRect(290, 260, 601, 61))
+        self.caixa_link_2.setGeometry(QtCore.QRect(240, 270, 601, 61))
         font = QtGui.QFont()
         font.setFamily("Impact")
         font.setPointSize(16)
         self.caixa_link_2.setFont(font)
-        self.caixa_link_2.setStyleSheet("border-style:outset;\n"
+        self.caixa_link_2.setFocusPolicy(QtCore.Qt.WheelFocus)
+        self.caixa_link_2.setStyleSheet("color:black;\n"
+"border-style:outset;\n"
 "border-radius:15px;\n"
 "border-width:3px;\n"
 "background-color:rgb(234, 249, 249)")
+        self.caixa_link_2.setInputMask("")
         self.caixa_link_2.setText("")
+        self.caixa_link_2.setEchoMode(QtWidgets.QLineEdit.Normal)
         self.caixa_link_2.setPlaceholderText("")
+        self.caixa_link_2.setCursorMoveStyle(QtCore.Qt.VisualMoveStyle)
         self.caixa_link_2.setObjectName("caixa_link_2")
         self.radioButton_image = QtWidgets.QRadioButton(self.page1)
-        self.radioButton_image.setGeometry(QtCore.QRect(100, 300, 131, 31))
+        self.radioButton_image.setGeometry(QtCore.QRect(290, 230, 151, 31))
         font = QtGui.QFont()
-        font.setFamily("Impact")
-        font.setPointSize(10)
+        font.setFamily("Trebuchet MS")
+        font.setPointSize(-1)
         self.radioButton_image.setFont(font)
-        self.radioButton_image.setStyleSheet("color: black;\n"
-"alternate-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.339795 rgba(255, 0, 0, 255), stop:0.339799 rgba(255, 255, 255, 255), stop:0.662444 rgba(255, 255, 255, 255), stop:0.662469 rgba(0, 0, 255, 255), stop:1 rgba(0, 0, 255, 255));")
+        self.radioButton_image.setStyleSheet("border:none;\n"
+"font-family: Trebuchet MS;\n"
+"font-size:14px;\n"
+"color:white;\n"
+"")
         self.radioButton_image.setObjectName("radioButton_image")
         self.radioButton_musica = QtWidgets.QRadioButton(self.page1)
-        self.radioButton_musica.setGeometry(QtCore.QRect(100, 340, 131, 31))
+        self.radioButton_musica.setGeometry(QtCore.QRect(460, 230, 131, 31))
         font = QtGui.QFont()
-        font.setFamily("Impact")
-        font.setPointSize(10)
+        font.setFamily("Trebuchet MS")
+        font.setPointSize(-1)
         self.radioButton_musica.setFont(font)
-        self.radioButton_musica.setStyleSheet("color: black;\n"
-"alternate-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.339795 rgba(255, 0, 0, 255), stop:0.339799 rgba(255, 255, 255, 255), stop:0.662444 rgba(255, 255, 255, 255), stop:0.662469 rgba(0, 0, 255, 255), stop:1 rgba(0, 0, 255, 255));")
+        self.radioButton_musica.setStyleSheet("border:none;\n"
+"font-family: Trebuchet MS;\n"
+"font-size:14px;\n"
+"color:white;\n"
+"")
         self.radioButton_musica.setObjectName("radioButton_musica")
         self.radioButton_video_2 = QtWidgets.QRadioButton(self.page1)
-        self.radioButton_video_2.setGeometry(QtCore.QRect(100, 380, 131, 31))
+        self.radioButton_video_2.setGeometry(QtCore.QRect(630, 230, 131, 31))
         font = QtGui.QFont()
-        font.setFamily("Impact")
-        font.setPointSize(10)
+        font.setFamily("Trebuchet MS")
+        font.setPointSize(-1)
         self.radioButton_video_2.setFont(font)
-        self.radioButton_video_2.setStyleSheet("color: black;\n"
-"alternate-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.339795 rgba(255, 0, 0, 255), stop:0.339799 rgba(255, 255, 255, 255), stop:0.662444 rgba(255, 255, 255, 255), stop:0.662469 rgba(0, 0, 255, 255), stop:1 rgba(0, 0, 255, 255));")
+        self.radioButton_video_2.setFocusPolicy(QtCore.Qt.WheelFocus)
+        self.radioButton_video_2.setStyleSheet("border:none;\n"
+"font-family: Trebuchet MS;\n"
+"font-size:14px;\n"
+"color:white;\n"
+"")
         self.radioButton_video_2.setObjectName("radioButton_video_2")
         self.baixa_link = QtWidgets.QPushButton(self.page1)
-        self.baixa_link.setGeometry(QtCore.QRect(450, 450, 211, 61))
+        self.baixa_link.setGeometry(QtCore.QRect(230, 410, 211, 61))
         font = QtGui.QFont()
         font.setFamily("Impact")
         font.setPointSize(15)
@@ -98,12 +107,13 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         self.baixa_link.setFont(font)
         self.baixa_link.setStyleSheet("border-style:outset;\n"
-"border-radius:12px;\n"
+"border-radius:5px;\n"
 "border-width:0px;\n"
-"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 170, 0), stop:1 rgba(255, 255, 255, 255));")
+"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
+"")
         self.baixa_link.setObjectName("baixa_link")
         self.tela_2 = QtWidgets.QLabel(self.page1)
-        self.tela_2.setGeometry(QtCore.QRect(460, 350, 191, 51))
+        self.tela_2.setGeometry(QtCore.QRect(420, 340, 191, 51))
         font = QtGui.QFont()
         font.setFamily("Impact")
         font.setPointSize(17)
@@ -114,50 +124,80 @@ class Ui_MainWindow(object):
         self.tela_2.setStyleSheet("color:white;\n"
 "border-style:outset;\n"
 "border-radius:5px;\n"
-"border-width:0px;background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
+"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
 "")
         self.tela_2.setText("")
+        self.tela_2.setAlignment(QtCore.Qt.AlignCenter)
         self.tela_2.setObjectName("tela_2")
-        self.ver_link = QtWidgets.QPushButton(self.page1)
-        self.ver_link.setGeometry(QtCore.QRect(230, 450, 211, 61))
+        self.label_welcome = QtWidgets.QLabel(self.page1)
+        self.label_welcome.setGeometry(QtCore.QRect(20, 10, 260, 23))
+        self.label_welcome.setStyleSheet("font-family: Trebuchet MS;\n"
+"font-size: 15px;\n"
+"font-weight: bold;\n"
+"color: white;\n"
+"border:none;\n"
+"text-decoration:underline;\n"
+"color:white;\n"
+"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
+"")
+        self.label_welcome.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_welcome.setObjectName("label_welcome")
+        self.label_3 = QtWidgets.QLabel(self.page1)
+        self.label_3.setGeometry(QtCore.QRect(280, 230, 161, 31))
+        self.label_3.setStyleSheet("background-color: rgb(0, 0, 0);\n"
+"border-style:outset;\n"
+"border-radius:12px;\n"
+"border-width:0px;")
+        self.label_3.setText("")
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.page1)
+        self.label_4.setGeometry(QtCore.QRect(450, 230, 161, 31))
+        self.label_4.setStyleSheet("background-color: rgb(0, 0, 0);\n"
+"border-style:outset;\n"
+"border-radius:12px;\n"
+"border-width:0px;")
+        self.label_4.setText("")
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.page1)
+        self.label_5.setGeometry(QtCore.QRect(620, 230, 161, 31))
+        self.label_5.setStyleSheet("background-color: rgb(0, 0, 0);\n"
+"border-style:outset;\n"
+"border-radius:12px;\n"
+"border-width:0px;")
+        self.label_5.setText("")
+        self.label_5.setObjectName("label_5")
+        self.limpar_pagina1 = QtWidgets.QPushButton(self.page1)
+        self.limpar_pagina1.setGeometry(QtCore.QRect(680, 410, 211, 61))
         font = QtGui.QFont()
         font.setFamily("Impact")
         font.setPointSize(15)
         font.setBold(False)
         font.setWeight(50)
-        self.ver_link.setFont(font)
-        self.ver_link.setStyleSheet("border-style:outset;\n"
-"border-radius:12px;\n"
+        self.limpar_pagina1.setFont(font)
+        self.limpar_pagina1.setStyleSheet("border-style:outset;\n"
+"border-radius:5px;\n"
 "border-width:0px;\n"
-"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 170, 0), stop:1 rgba(255, 255, 255, 255));")
-        self.ver_link.setObjectName("ver_link")
+"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
+"")
+        self.limpar_pagina1.setObjectName("limpar_pagina1")
+        self.label_4.raise_()
+        self.label_5.raise_()
+        self.label_3.raise_()
+        self.TExt_Link.raise_()
+        self.icone.raise_()
+        self.caixa_link_2.raise_()
+        self.radioButton_image.raise_()
+        self.radioButton_musica.raise_()
+        self.radioButton_video_2.raise_()
+        self.baixa_link.raise_()
+        self.tela_2.raise_()
+        self.label_welcome.raise_()
+        self.limpar_pagina1.raise_()
         self.stackedWidget.addWidget(self.page1)
         self.page2 = QtWidgets.QWidget()
         self.page2.setObjectName("page2")
-        self.comboBox = QtWidgets.QComboBox(self.page2)
-        self.comboBox.setGeometry(QtCore.QRect(420, 540, 161, 41))
-        font = QtGui.QFont()
-        font.setFamily("Impact")
-        font.setPointSize(10)
-        self.comboBox.setFont(font)
-        self.comboBox.setCurrentText("")
-        self.comboBox.setObjectName("comboBox")
-        self.comboBox.addItem("")
-        self.comboBox.setItemText(0, "")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../icone py/user1.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.comboBox.addItem(icon, "")
-        self.comboBox.addItem(icon, "")
-        self.label_page2 = QtWidgets.QLabel(self.page2)
-        self.label_page2.setGeometry(QtCore.QRect(600, 550, 191, 31))
-        font = QtGui.QFont()
-        font.setFamily("Impact")
-        font.setPointSize(14)
-        self.label_page2.setFont(font)
-        self.label_page2.setText("")
-        self.label_page2.setObjectName("label_page2")
         self.ver_link_2 = QtWidgets.QPushButton(self.page2)
-        self.ver_link_2.setGeometry(QtCore.QRect(20, 470, 211, 61))
+        self.ver_link_2.setGeometry(QtCore.QRect(150, 590, 131, 31))
         font = QtGui.QFont()
         font.setFamily("Impact")
         font.setPointSize(15)
@@ -165,12 +205,16 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         self.ver_link_2.setFont(font)
         self.ver_link_2.setStyleSheet("border-style:outset;\n"
-"border-radius:12px;\n"
+"border-radius:5px;\n"
 "border-width:0px;\n"
-"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 170, 0), stop:1 rgba(255, 255, 255, 255));")
+"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
+"")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("icon/open.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.ver_link_2.setIcon(icon)
         self.ver_link_2.setObjectName("ver_link_2")
         self.scrollArea_PAgina2 = QtWidgets.QScrollArea(self.page2)
-        self.scrollArea_PAgina2.setGeometry(QtCore.QRect(30, 50, 881, 381))
+        self.scrollArea_PAgina2.setGeometry(QtCore.QRect(10, 10, 1071, 571))
         self.scrollArea_PAgina2.setStyleSheet("\n"
 "background-color: qradialgradient(spread:repeat, cx:0.5, cy:0.5, radius:0.077, fx:0.5, fy:0.5, stop:0 rgba(0, 169, 255, 147), stop:0.497326 rgba(0, 0, 0, 147), stop:1 rgba(0, 169, 255, 147));\n"
 "border-radius:12px;\n"
@@ -179,7 +223,7 @@ class Ui_MainWindow(object):
         self.scrollArea_PAgina2.setWidgetResizable(True)
         self.scrollArea_PAgina2.setObjectName("scrollArea_PAgina2")
         self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 881, 381))
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 1071, 571))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.gridLayout_3 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_2)
         self.gridLayout_3.setObjectName("gridLayout_3")
@@ -194,30 +238,57 @@ class Ui_MainWindow(object):
         self.gridLayout_3.addWidget(self.Open_pagina2, 0, 0, 1, 1)
         self.scrollArea_PAgina2.setWidget(self.scrollAreaWidgetContents_2)
         self.inputAbrirArquivo_2 = QtWidgets.QLineEdit(self.page2)
-        self.inputAbrirArquivo_2.setGeometry(QtCore.QRect(240, 490, 521, 31))
+        self.inputAbrirArquivo_2.setGeometry(QtCore.QRect(290, 590, 261, 31))
         self.inputAbrirArquivo_2.setStyleSheet("border-style:outset;\n"
+"border-radius:5px;\n"
+"border-width:1px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"color:black;")
+        self.inputAbrirArquivo_2.setObjectName("inputAbrirArquivo_2")
+        self.comboBox = QtWidgets.QComboBox(self.page2)
+        self.comboBox.setGeometry(QtCore.QRect(30, 590, 91, 31))
+        self.comboBox.setStyleSheet("border-style:outset;\n"
 "border-radius:12px;\n"
 "border-width:0px;\n"
-"background-color: rgb(255, 255, 255);")
-        self.inputAbrirArquivo_2.setObjectName("inputAbrirArquivo_2")
-        self.limpa_2 = QtWidgets.QPushButton(self.page2)
-        self.limpa_2.setGeometry(QtCore.QRect(20, 540, 211, 61))
+"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
+"")
+        self.comboBox.setObjectName("comboBox")
+        self.comboBox.addItem("")
+        self.comboBox.setItemText(0, "")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.label_pagina2 = QtWidgets.QLabel(self.page2)
+        self.label_pagina2.setGeometry(QtCore.QRect(710, 590, 261, 31))
+        self.label_pagina2.setStyleSheet("border-style:outset;\n"
+"border-radius:5px;\n"
+"border-width:1px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"color:black;")
+        self.label_pagina2.setText("")
+        self.label_pagina2.setObjectName("label_pagina2")
+        self.pushButton = QtWidgets.QPushButton(self.page2)
+        self.pushButton.setGeometry(QtCore.QRect(570, 590, 131, 31))
         font = QtGui.QFont()
         font.setFamily("Impact")
-        font.setPointSize(15)
-        font.setBold(False)
-        font.setWeight(50)
-        self.limpa_2.setFont(font)
-        self.limpa_2.setStyleSheet("border-style:outset;\n"
-"border-radius:12px;\n"
+        font.setPointSize(14)
+        self.pushButton.setFont(font)
+        self.pushButton.setStyleSheet("border-style:outset;\n"
+"border-radius:5px;\n"
 "border-width:0px;\n"
-"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 170, 0), stop:1 rgba(255, 255, 255, 255));")
-        self.limpa_2.setObjectName("limpa_2")
+"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
+"")
+        self.pushButton.setObjectName("pushButton")
+        self.scrollArea_PAgina2.raise_()
+        self.inputAbrirArquivo_2.raise_()
+        self.comboBox.raise_()
+        self.label_pagina2.raise_()
+        self.pushButton.raise_()
+        self.ver_link_2.raise_()
         self.stackedWidget.addWidget(self.page2)
         self.pagina3 = QtWidgets.QWidget()
         self.pagina3.setObjectName("pagina3")
         self.scrollArea = QtWidgets.QScrollArea(self.pagina3)
-        self.scrollArea.setGeometry(QtCore.QRect(20, 10, 881, 381))
+        self.scrollArea.setGeometry(QtCore.QRect(20, 10, 1041, 491))
         self.scrollArea.setStyleSheet("\n"
 "background-color: qradialgradient(spread:repeat, cx:0.5, cy:0.5, radius:0.077, fx:0.5, fy:0.5, stop:0 rgba(0, 169, 255, 147), stop:0.497326 rgba(0, 0, 0, 147), stop:1 rgba(0, 169, 255, 147));\n"
 "border-radius:12px;\n"
@@ -226,7 +297,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 881, 381))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 1041, 491))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents)
         self.gridLayout_2.setObjectName("gridLayout_2")
@@ -241,36 +312,45 @@ class Ui_MainWindow(object):
         self.gridLayout_2.addWidget(self.labelImg, 0, 0, 1, 1)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.inputAbrirArquivo = QtWidgets.QLineEdit(self.pagina3)
-        self.inputAbrirArquivo.setGeometry(QtCore.QRect(40, 400, 521, 31))
+        self.inputAbrirArquivo.setGeometry(QtCore.QRect(190, 510, 331, 31))
         self.inputAbrirArquivo.setStyleSheet("border-style:outset;\n"
-"border-radius:12px;\n"
-"border-width:0px;\n"
-"background-color: rgb(255, 255, 255);")
+"border-radius:5px;\n"
+"border-width:1px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"color:black;")
         self.inputAbrirArquivo.setText("")
         self.inputAbrirArquivo.setObjectName("inputAbrirArquivo")
         self.btnEscolherArquivo = QtWidgets.QPushButton(self.pagina3)
-        self.btnEscolherArquivo.setGeometry(QtCore.QRect(570, 400, 211, 41))
+        self.btnEscolherArquivo.setGeometry(QtCore.QRect(30, 510, 151, 31))
         font = QtGui.QFont()
         font.setFamily("Impact")
-        font.setPointSize(16)
+        font.setPointSize(11)
         self.btnEscolherArquivo.setFont(font)
         self.btnEscolherArquivo.setStyleSheet("border-style:outset;\n"
-"border-radius:12px;\n"
+"border-radius:5px;\n"
 "border-width:0px;\n"
-"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 170, 0), stop:1 rgba(255, 255, 255, 255));")
+"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
+"")
+        self.btnEscolherArquivo.setIcon(icon)
         self.btnEscolherArquivo.setObjectName("btnEscolherArquivo")
         self.label = QtWidgets.QLabel(self.pagina3)
-        self.label.setGeometry(QtCore.QRect(60, 440, 81, 31))
+        self.label.setGeometry(QtCore.QRect(600, 510, 91, 31))
         font = QtGui.QFont()
+        font.setFamily("Arial Black")
         font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
         self.label.setFont(font)
         self.label.setStyleSheet("border-style:outset;\n"
-"border-radius:12px;\n"
+"border-radius:5px;\n"
 "border-width:0px;\n"
-"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 170, 0), stop:1 rgba(255, 255, 255, 255));")
+"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
+"")
+        self.label.setFrameShape(QtWidgets.QFrame.Box)
+        self.label.setTextFormat(QtCore.Qt.PlainText)
         self.label.setObjectName("label")
         self.inputAltura = QtWidgets.QLineEdit(self.pagina3)
-        self.inputAltura.setGeometry(QtCore.QRect(150, 530, 139, 21))
+        self.inputAltura.setGeometry(QtCore.QRect(980, 520, 91, 21))
         self.inputAltura.setStyleSheet("background-color: rgb(255, 255, 255);\n"
 "color:black;\n"
 "border-style:outset;\n"
@@ -279,126 +359,252 @@ class Ui_MainWindow(object):
 "")
         self.inputAltura.setObjectName("inputAltura")
         self.label_2 = QtWidgets.QLabel(self.pagina3)
-        self.label_2.setGeometry(QtCore.QRect(60, 520, 81, 31))
+        self.label_2.setGeometry(QtCore.QRect(890, 510, 81, 31))
         font = QtGui.QFont()
+        font.setFamily("Arial Black")
         font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
         self.label_2.setFont(font)
         self.label_2.setStyleSheet("border-style:outset;\n"
-"border-radius:12px;\n"
+"border-radius:5px;\n"
 "border-width:0px;\n"
-"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 170, 0), stop:1 rgba(255, 255, 255, 255));")
+"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
+"")
         self.label_2.setObjectName("label_2")
         self.inputLargura = QtWidgets.QLineEdit(self.pagina3)
-        self.inputLargura.setGeometry(QtCore.QRect(150, 450, 141, 22))
+        self.inputLargura.setGeometry(QtCore.QRect(700, 520, 101, 22))
         self.inputLargura.setStyleSheet("background-color: rgb(255, 255, 255);\n"
 "color:black;\n"
 "border-style:outset;\n"
 "border-radius:8px;\n"
 "border-width:0px;\n"
-"")
+"color:black;")
         self.inputLargura.setObjectName("inputLargura")
         self.btnRedimensionar = QtWidgets.QPushButton(self.pagina3)
-        self.btnRedimensionar.setGeometry(QtCore.QRect(340, 450, 231, 51))
+        self.btnRedimensionar.setGeometry(QtCore.QRect(590, 550, 131, 31))
         font = QtGui.QFont()
         font.setFamily("Impact")
-        font.setPointSize(16)
+        font.setPointSize(10)
         self.btnRedimensionar.setFont(font)
         self.btnRedimensionar.setStyleSheet("border-style:outset;\n"
-"border-radius:12px;\n"
+"border-radius:5px;\n"
 "border-width:0px;\n"
-"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 170, 0), stop:1 rgba(255, 255, 255, 255));")
+"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
+"")
         self.btnRedimensionar.setObjectName("btnRedimensionar")
         self.btnSalvar = QtWidgets.QPushButton(self.pagina3)
-        self.btnSalvar.setGeometry(QtCore.QRect(340, 520, 231, 51))
+        self.btnSalvar.setGeometry(QtCore.QRect(740, 560, 131, 31))
         font = QtGui.QFont()
         font.setFamily("Impact")
-        font.setPointSize(16)
+        font.setPointSize(10)
         self.btnSalvar.setFont(font)
         self.btnSalvar.setStyleSheet("border-style:outset;\n"
-"border-radius:12px;\n"
+"border-radius:5px;\n"
 "border-width:0px;\n"
-"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 170, 0), stop:1 rgba(255, 255, 255, 255));")
+"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
+"")
         self.btnSalvar.setObjectName("btnSalvar")
         self.limpa_3 = QtWidgets.QPushButton(self.pagina3)
-        self.limpa_3.setGeometry(QtCore.QRect(610, 480, 211, 61))
+        self.limpa_3.setGeometry(QtCore.QRect(890, 550, 101, 31))
         font = QtGui.QFont()
         font.setFamily("Impact")
-        font.setPointSize(15)
+        font.setPointSize(10)
         font.setBold(False)
         font.setWeight(50)
         self.limpa_3.setFont(font)
         self.limpa_3.setStyleSheet("border-style:outset;\n"
-"border-radius:12px;\n"
+"border-radius:5px;\n"
 "border-width:0px;\n"
-"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 170, 0), stop:1 rgba(255, 255, 255, 255));")
-        self.limpa_3.setObjectName("limpa_3")
-        self.stackedWidget.addWidget(self.pagina3)
-        self.frame = QtWidgets.QFrame(self.centralwidget)
-        self.frame.setGeometry(QtCore.QRect(10, 0, 951, 81))
-        self.frame.setStyleSheet("\n"
-"\n"
 "background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
 "")
-        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame.setObjectName("frame")
-        self.btn_page_1 = QtWidgets.QPushButton(self.frame)
-        self.btn_page_1.setGeometry(QtCore.QRect(20, 10, 101, 41))
-        self.btn_page_1.setMinimumSize(QtCore.QSize(0, 40))
-        self.btn_page_1.setStyleSheet("color:white;\n"
-"border-style:outset;\n"
-"border-radius:8px;\n"
+        self.limpa_3.setObjectName("limpa_3")
+        self.stackedWidget.addWidget(self.pagina3)
+        self.pagin4_cadastro = QtWidgets.QWidget()
+        self.pagin4_cadastro.setObjectName("pagin4_cadastro")
+        self.tableWidget_cadastro = QtWidgets.QTableWidget(self.pagin4_cadastro)
+        self.tableWidget_cadastro.setGeometry(QtCore.QRect(40, 70, 991, 301))
+        self.tableWidget_cadastro.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"color:blakc;")
+        self.tableWidget_cadastro.setObjectName("tableWidget_cadastro")
+        self.tableWidget_cadastro.setColumnCount(5)
+        self.tableWidget_cadastro.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setFamily("Arial Black")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        item.setFont(font)
+        self.tableWidget_cadastro.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setFamily("Arial Black")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        item.setFont(font)
+        self.tableWidget_cadastro.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setFamily("Arial Black")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        item.setFont(font)
+        self.tableWidget_cadastro.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setFamily("Arial Black")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        item.setFont(font)
+        self.tableWidget_cadastro.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setFamily("Arial Black")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        item.setFont(font)
+        self.tableWidget_cadastro.setHorizontalHeaderItem(4, item)
+        self.button_apagar = QtWidgets.QPushButton(self.pagin4_cadastro)
+        self.button_apagar.setGeometry(QtCore.QRect(360, 390, 131, 41))
+        font = QtGui.QFont()
+        font.setFamily("Impact")
+        font.setPointSize(12)
+        self.button_apagar.setFont(font)
+        self.button_apagar.setStyleSheet("border-style:outset;\n"
+"border-radius:5px;\n"
 "border-width:0px;\n"
-"background-color: rgb(255, 170, 0);")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("../icone py/icons/cil-check-circle.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.btn_page_1.setIcon(icon1)
-        self.btn_page_1.setObjectName("btn_page_1")
-        self.btn_page_3 = QtWidgets.QPushButton(self.frame)
-        self.btn_page_3.setGeometry(QtCore.QRect(340, 10, 111, 41))
-        self.btn_page_3.setMinimumSize(QtCore.QSize(0, 40))
-        self.btn_page_3.setStyleSheet("color:white;\n"
-"border-style:outset;\n"
-"border-radius:8px;\n"
+"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
+"")
+        self.button_apagar.setObjectName("button_apagar")
+        self.incluir = QtWidgets.QPushButton(self.pagin4_cadastro)
+        self.incluir.setGeometry(QtCore.QRect(40, 390, 131, 41))
+        font = QtGui.QFont()
+        font.setFamily("Impact")
+        font.setPointSize(12)
+        self.incluir.setFont(font)
+        self.incluir.setStyleSheet("border-style:outset;\n"
+"border-radius:5px;\n"
 "border-width:0px;\n"
-"background-color: rgb(255, 170, 0);")
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("../icone py/icons/cil-touch-app.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.btn_page_3.setIcon(icon2)
-        self.btn_page_3.setObjectName("btn_page_3")
-        self.btn_page_2 = QtWidgets.QPushButton(self.frame)
-        self.btn_page_2.setGeometry(QtCore.QRect(170, 10, 139, 40))
-        self.btn_page_2.setMinimumSize(QtCore.QSize(0, 40))
-        self.btn_page_2.setStyleSheet("color:white;\n"
-"border-style:outset;\n"
-"border-radius:8px;\n"
+"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
+"")
+        self.incluir.setObjectName("incluir")
+        self.button_atualizar = QtWidgets.QPushButton(self.pagin4_cadastro)
+        self.button_atualizar.setGeometry(QtCore.QRect(530, 390, 131, 41))
+        font = QtGui.QFont()
+        font.setFamily("Impact")
+        font.setPointSize(12)
+        self.button_atualizar.setFont(font)
+        self.button_atualizar.setStyleSheet("border-style:outset;\n"
+"border-radius:5px;\n"
 "border-width:0px;\n"
-"background-color: rgb(255, 170, 0);")
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("../icone py/icons/cil-people.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.btn_page_2.setIcon(icon3)
-        self.btn_page_2.setObjectName("btn_page_2")
-        self.frame.raise_()
+"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
+"")
+        self.button_atualizar.setObjectName("button_atualizar")
+        self.button_altera = QtWidgets.QPushButton(self.pagin4_cadastro)
+        self.button_altera.setGeometry(QtCore.QRect(190, 390, 131, 41))
+        font = QtGui.QFont()
+        font.setFamily("Impact")
+        font.setPointSize(12)
+        self.button_altera.setFont(font)
+        self.button_altera.setStyleSheet("border-style:outset;\n"
+"border-radius:5px;\n"
+"border-width:0px;\n"
+"background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));\n"
+"")
+        self.button_altera.setObjectName("button_altera")
+        self.stackedWidget.addWidget(self.pagin4_cadastro)
+        self.fundo_imagen = QtWidgets.QLabel(self.centralwidget)
+        self.fundo_imagen.setGeometry(QtCore.QRect(10, -40, 1301, 831))
+        self.fundo_imagen.setStyleSheet("background-color: rgb(0, 0, 0);")
+        self.fundo_imagen.setText("")
+        self.fundo_imagen.setPixmap(QtGui.QPixmap("icon/fundo tela.jpg"))
+        self.fundo_imagen.setObjectName("fundo_imagen")
+        self.login_logado = QtWidgets.QLabel(self.centralwidget)
+        self.login_logado.setGeometry(QtCore.QRect(280, 0, 81, 16))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.login_logado.setFont(font)
+        self.login_logado.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"color:while;")
+        self.login_logado.setFrameShape(QtWidgets.QFrame.Box)
+        self.login_logado.setText("")
+        self.login_logado.setTextFormat(QtCore.Qt.PlainText)
+        self.login_logado.setObjectName("login_logado")
+        self.label_6 = QtWidgets.QLabel(self.centralwidget)
+        self.label_6.setGeometry(QtCore.QRect(230, 0, 47, 16))
+        self.label_6.setStyleSheet("background-color: rgb(0, 0, 0);\n"
+"color: rgb(255, 255, 255);")
+        self.label_6.setObjectName("label_6")
+        self.fundo_imagen.raise_()
         self.stackedWidget.raise_()
+        self.login_logado.raise_()
+        self.label_6.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
-        self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 988, 26))
-        self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
+        self.toolBar = QtWidgets.QToolBar(MainWindow)
+        self.toolBar.setObjectName("toolBar")
+        MainWindow.addToolBar(QtCore.Qt.TopToolBarArea, self.toolBar)
+        self.statusBar = QtWidgets.QStatusBar(MainWindow)
+        self.statusBar.setObjectName("statusBar")
+        MainWindow.setStatusBar(self.statusBar)
+        self.toolBar_2 = QtWidgets.QToolBar(MainWindow)
+        self.toolBar_2.setObjectName("toolBar_2")
+        MainWindow.addToolBar(QtCore.Qt.TopToolBarArea, self.toolBar_2)
+        self.toolBar_3 = QtWidgets.QToolBar(MainWindow)
+        self.toolBar_3.setObjectName("toolBar_3")
+        MainWindow.addToolBar(QtCore.Qt.BottomToolBarArea, self.toolBar_3)
+        MainWindow.insertToolBarBreak(self.toolBar_3)
         self.actionpagina = QtWidgets.QAction(MainWindow)
         self.actionpagina.setObjectName("actionpagina")
+        self.actionpagina1 = QtWidgets.QAction(MainWindow)
+        self.actionpagina1.setObjectName("actionpagina1")
+        self.actionpagina2 = QtWidgets.QAction(MainWindow)
+        self.actionpagina2.setObjectName("actionpagina2")
+        self.actionPAGINA1 = QtWidgets.QAction(MainWindow)
+        self.actionPAGINA1.setIcon(icon)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.actionPAGINA1.setFont(font)
+        self.actionPAGINA1.setMenuRole(QtWidgets.QAction.TextHeuristicRole)
+        self.actionPAGINA1.setObjectName("actionPAGINA1")
+        self.actionPAGINA2 = QtWidgets.QAction(MainWindow)
+        self.actionPAGINA2.setIcon(icon)
+        self.actionPAGINA2.setObjectName("actionPAGINA2")
+        self.actionPAGINA3 = QtWidgets.QAction(MainWindow)
+        self.actionPAGINA3.setIcon(icon)
+        self.actionPAGINA3.setObjectName("actionPAGINA3")
+        self.actionFECHAR = QtWidgets.QAction(MainWindow)
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("icon/cil-x-circle.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.actionFECHAR.setIcon(icon1)
+        self.actionFECHAR.setObjectName("actionFECHAR")
+        self.actionpagina4 = QtWidgets.QAction(MainWindow)
+        self.actionpagina4.setObjectName("actionpagina4")
+        self.actionPAGINA4 = QtWidgets.QAction(MainWindow)
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("icon/adicionar_button.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.actionPAGINA4.setIcon(icon2)
+        self.actionPAGINA4.setObjectName("actionPAGINA4")
+        self.toolBar.addAction(self.actionPAGINA1)
+        self.toolBar.addAction(self.actionPAGINA2)
+        self.toolBar.addAction(self.actionPAGINA3)
+        self.toolBar_2.addAction(self.actionPAGINA4)
+        self.toolBar_3.addAction(self.actionFECHAR)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(2)
-        self.limpa_2.clicked.connect(self.Open_pagina2.clear)
-        self.limpa_2.clicked.connect(self.inputAbrirArquivo_2.clear)
+        self.stackedWidget.setCurrentIndex(3)
+        self.limpa_3.clicked.connect(self.inputAbrirArquivo.clear)
+        self.limpar_pagina1.clicked.connect(self.caixa_link_2.clear)
+        self.limpar_pagina1.clicked.connect(self.tela_2.clear)
+        self.pushButton.clicked.connect(self.inputAbrirArquivo_2.clear)
+        self.pushButton.clicked.connect(self.Open_pagina2.clear)
         self.limpa_3.clicked.connect(self.labelImg.clear)
         self.limpa_3.clicked.connect(self.inputAltura.clear)
         self.limpa_3.clicked.connect(self.inputLargura.clear)
-        self.limpa_3.clicked.connect(self.inputAbrirArquivo.clear)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -409,21 +615,55 @@ class Ui_MainWindow(object):
         self.radioButton_musica.setText(_translate("MainWindow", "Musica"))
         self.radioButton_video_2.setText(_translate("MainWindow", "Video"))
         self.baixa_link.setText(_translate("MainWindow", "Baixar"))
-        self.ver_link.setText(_translate("MainWindow", "Visualizar"))
-        self.comboBox.setItemText(1, _translate("MainWindow", "China"))
-        self.comboBox.setItemText(2, _translate("MainWindow", "Brasil"))
-        self.ver_link_2.setText(_translate("MainWindow", "Ver"))
-        self.limpa_2.setText(_translate("MainWindow", "Limpar"))
+        self.label_welcome.setText(_translate("MainWindow", "Bem vindo Usuario."))
+        self.limpar_pagina1.setText(_translate("MainWindow", "Limpar"))
+        self.ver_link_2.setText(_translate("MainWindow", "open"))
+        self.comboBox.setItemText(1, _translate("MainWindow", "test"))
+        self.comboBox.setItemText(2, _translate("MainWindow", "test"))
+        self.pushButton.setText(_translate("MainWindow", "limpar"))
         self.inputAbrirArquivo.setPlaceholderText(_translate("MainWindow", "Caminho da foto"))
         self.btnEscolherArquivo.setText(_translate("MainWindow", "Escolher Arquivo"))
-        self.label.setText(_translate("MainWindow", "Largura"))
+        self.label.setText(_translate("MainWindow", "  Largura"))
         self.inputAltura.setPlaceholderText(_translate("MainWindow", "Coloque Altura"))
-        self.label_2.setText(_translate("MainWindow", "Altura"))
+        self.label_2.setText(_translate("MainWindow", "    Altura"))
         self.inputLargura.setPlaceholderText(_translate("MainWindow", "Coloque Largura"))
         self.btnRedimensionar.setText(_translate("MainWindow", "Redimensionar"))
         self.btnSalvar.setText(_translate("MainWindow", "Salvar"))
         self.limpa_3.setText(_translate("MainWindow", "Limpar"))
-        self.btn_page_1.setText(_translate("MainWindow", "pagina1"))
-        self.btn_page_3.setText(_translate("MainWindow", "Page 3"))
-        self.btn_page_2.setText(_translate("MainWindow", "pagina2"))
+        item = self.tableWidget_cadastro.horizontalHeaderItem(0)
+        item.setText(_translate("MainWindow", "ID"))
+        item = self.tableWidget_cadastro.horizontalHeaderItem(1)
+        item.setText(_translate("MainWindow", "CODIGO"))
+        item = self.tableWidget_cadastro.horizontalHeaderItem(2)
+        item.setText(_translate("MainWindow", "DESCRIÇAO"))
+        item = self.tableWidget_cadastro.horizontalHeaderItem(3)
+        item.setText(_translate("MainWindow", "QUANTIDADE"))
+        item = self.tableWidget_cadastro.horizontalHeaderItem(4)
+        item.setText(_translate("MainWindow", "VALOR"))
+        self.button_apagar.setText(_translate("MainWindow", "APAGAR"))
+        self.incluir.setText(_translate("MainWindow", "INCLUIR"))
+        self.button_atualizar.setText(_translate("MainWindow", "ATUALIZAR"))
+        self.button_altera.setText(_translate("MainWindow", "EDITAR"))
+        self.label_6.setText(_translate("MainWindow", "Usuario"))
+        self.toolBar.setWindowTitle(_translate("MainWindow", "toolBar"))
+        self.toolBar_2.setWindowTitle(_translate("MainWindow", "toolBar_2"))
+        self.toolBar_3.setWindowTitle(_translate("MainWindow", "toolBar_3"))
         self.actionpagina.setText(_translate("MainWindow", "pagina"))
+        self.actionpagina1.setText(_translate("MainWindow", "pagina1"))
+        self.actionpagina2.setText(_translate("MainWindow", "pagina2"))
+        self.actionPAGINA1.setText(_translate("MainWindow", "INICIAL"))
+        self.actionPAGINA1.setToolTip(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#ff0000;\">INICIAL</span></p></body></html>"))
+        self.actionPAGINA1.setShortcut(_translate("MainWindow", "F1"))
+        self.actionPAGINA2.setText(_translate("MainWindow", "SEGUNDATELA"))
+        self.actionPAGINA2.setToolTip(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#ff0000;\">SEGUNDA TELA</span></p></body></html>"))
+        self.actionPAGINA2.setShortcut(_translate("MainWindow", "F2"))
+        self.actionPAGINA3.setText(_translate("MainWindow", "TERCEIRATELA"))
+        self.actionPAGINA3.setToolTip(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#ff0000;\">TERCEIRATELA</span></p></body></html>"))
+        self.actionPAGINA3.setShortcut(_translate("MainWindow", "F3"))
+        self.actionFECHAR.setText(_translate("MainWindow", "FECHAR"))
+        self.actionFECHAR.setToolTip(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#ff0000;\">SAIR SISTEMA</span></p></body></html>"))
+        self.actionFECHAR.setShortcut(_translate("MainWindow", "Esc"))
+        self.actionpagina4.setText(_translate("MainWindow", "pagina4"))
+        self.actionPAGINA4.setText(_translate("MainWindow", "PAGINA4"))
+        self.actionPAGINA4.setToolTip(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#ff0000;\">CADASTRO</span></p></body></html>"))
+        self.actionPAGINA4.setShortcut(_translate("MainWindow", "F4"))
